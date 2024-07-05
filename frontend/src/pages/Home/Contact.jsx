@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="w-full flex flex-col lg:flex-row gap-10 items-center justify-between py-8 lg:py-16 px-4 ">
+    <div className="w-full flex flex-col lg:flex-row gap-10 items-center justify-between py-8 lg:py-16 ">
       <div className="w-full lg:w-3/6">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 ">
           Contact Us
@@ -14,7 +14,7 @@ const Contact = () => {
       </div>
       <form
         action="#"
-        className="space-y-8 w-full lg:w-3/6 bg-white p-10 rounded-lg shadow-sm border border-gray-300"
+        className="space-y-8 w-full lg:w-3/6 bg-white p-8 px-4 md:p-10 rounded-lg shadow-sm border border-gray-300"
       >
         <div>
           <label

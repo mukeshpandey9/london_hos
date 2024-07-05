@@ -18,7 +18,7 @@ const Homepage = () => {
           <h1 className="text-4xl md:text-6xl font-bold">
             Transforming Hospitality, One Experience at a Time
           </h1>
-          <p className="text-xl py-10">
+          <p className="text-[1rem] md:text-xl py-10">
             Elevating guest satisfaction through innovation, excellence, and
             personalized service. Discover the future of hospitality with New
             London Hospitality
@@ -32,7 +32,7 @@ const Homepage = () => {
 
       {/* Blog Section */}
       <div className="w-full h-full py-5 md:py-20 px-5 md:px-10">
-        <h1 className="text-4xl font-extrabold text-center">
+        <h1 className="text-4xl font-semibold md:font-extrabold text-center">
           Technology & Innovation
         </h1>
         <BlogCarousel />
@@ -41,7 +41,7 @@ const Homepage = () => {
         <Services />
       </div>
       <div className="w-full h-full py-10 md:py-20 px-5 md:px-10">
-        <h1 className="text-4xl font-extrabold text-center">
+        <h1 className="text-4xl font-semibold md:font-extrabold text-center">
           Testimonials from Our Valued Guests
         </h1>
         <TestimonialCarousel />

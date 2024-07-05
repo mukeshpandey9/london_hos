@@ -80,7 +80,7 @@ const BlogCarousel = () => {
           </Swiper>
         </div>
       ) : (
-        <div className="text-center text-xl text-gray-400">
+        <div className="text-center text-xl py-10 text-gray-400">
           No blogs available
         </div>
       )}

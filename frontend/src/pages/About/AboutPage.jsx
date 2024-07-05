@@ -7,7 +7,7 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
-            <h1 className="text-5xl lg:text-7xl font-bold text-slate-700 mb-10">
+            <h1 className="text-4xl text-center md:text-left lg:text-7xl font-bold text-slate-700 mb-10">
               Our Vision is Hospitality Transformation
             </h1>
             <p className="text-slate-700 mb-8">
@@ -61,10 +61,10 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div className="lg:col-span-2">
-            <h2 className="text-4xl font-extrabold mb-6">
+            <h2 className="text-3xl md:text-4xl font-semibold md:font-bold mb-6 text-dark">
               Business Operations
             </h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-[1rem] md:text-xl text-gray-700 mb-8">
               At New London Hospitality, we excel in optimizing business
               operations to enhance efficiency and guest satisfaction. From
               streamlining processes to ensuring seamless day-to-day
@@ -73,8 +73,10 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="lg:col-span-2">
-            <h2 className="text-4xl font-extrabold mb-6">Revenue Management</h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <h2 className="text-3xl md:text-4xl font-semibold md:font-bold mb-6 text-dark">
+              Revenue Management
+            </h2>
+            <p className="text-[1rem] md:text-xl text-gray-700 mb-8">
               Effective revenue management is crucial in the competitive
               hospitality landscape. We employ advanced strategies to optimize
               pricing, forecast demand accurately, and capitalize on revenue
@@ -82,10 +84,10 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="lg:col-span-2">
-            <h2 className="text-4xl font-extrabold mb-6">
+            <h2 className="text-3xl md:text-4xl font-semibold md:font-bold mb-6 text-dark">
               Financial Management
             </h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-[1rem] md:text-xl text-gray-700 mb-8">
               Sound financial management is fundamental to our approach. We
               meticulously analyze financial performance, manage budgets, and
               implement cost-control measures to ensure sustainable
@@ -94,10 +96,10 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="lg:col-span-2">
-            <h2 className="text-4xl font-extrabold mb-6">
+            <h2 className="text-3xl md:text-4xl font-semibold md:font-bold mb-6 text-dark">
               Technology and Innovation
             </h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <p className="text-[1rem] md:text-xl text-gray-700 mb-8">
               Embracing cutting-edge technology and fostering innovation are key
               pillars of our strategy. We leverage the latest hospitality
               management systems and innovative solutions to enhance guest
@@ -106,8 +108,10 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="lg:col-span-2">
-            <h2 className="text-4xl font-extrabold mb-6">Customer Relations</h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <h2 className="text-3xl md:text-4xl font-semibold md:font-bold mb-6 text-dark">
+              Customer Relations
+            </h2>
+            <p className="text-[1rem] md:text-xl text-gray-700 mb-8">
               Exceptional customer relations lie at the heart of our service
               philosophy. We prioritize building strong guest relationships
               through personalized experiences, attentive service, and
@@ -116,8 +120,10 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="lg:col-span-2">
-            <h2 className="text-4xl font-extrabold mb-6">Human Resources</h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <h2 className="text-3xl md:text-4xl font-semibold md:font-bold mb-6 text-dark">
+              Human Resources
+            </h2>
+            <p className="text-[1rem] md:text-xl text-gray-700 mb-8">
               Our commitment to excellence extends to our people. We invest in
               recruiting top talent, provide comprehensive training programs,
               and foster a culture of continuous learning and development. By
@@ -126,8 +132,10 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="lg:col-span-2">
-            <h2 className="text-4xl font-extrabold mb-6">Quality Assurance</h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <h2 className="text-3xl md:text-4xl font-semibold md:font-bold mb-6 text-dark">
+              Quality Assurance
+            </h2>
+            <p className="text-[1rem] md:text-xl text-gray-700 mb-8">
               Maintaining high standards of quality is non-negotiable. We
               implement rigorous quality assurance protocols, conduct regular
               inspections, and uphold industry best practices to ensure
@@ -135,8 +143,10 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="lg:col-span-2">
-            <h2 className="text-4xl font-extrabold mb-6">Our Commitment</h2>
-            <p className="text-xl text-gray-700 mb-8">
+            <h2 className="text-3xl md:text-4xl font-semibold md:font-bold mb-6 text-dark">
+              Our Commitment
+            </h2>
+            <p className="text-[1rem] md:text-xl text-gray-700 mb-8">
               At New London Hospitality, we are dedicated to exceeding
               expectations, driving profitability, and creating memorable guest
               experiences. With a focus on operational excellence, financial

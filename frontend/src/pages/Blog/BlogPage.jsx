@@ -141,7 +141,7 @@ const BlogPage = () => {
   return (
     <div>
       <main className="container mx-auto py-10">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-10">
+        <h1 className="text-4xl md:text-5xl font-semibold md:font-extrabold text-center mb-10">
           Discover Our Latest Stories
         </h1>
         <section className="py-10 px-5 md:px-20">
