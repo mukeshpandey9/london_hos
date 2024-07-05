@@ -55,7 +55,7 @@ const BlogForm = () => {
                 name="title"
                 type="text"
                 {...register("title", { required: true })}
-                className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm md:text-lg"
+                className="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded focus:outline-none  focus:border-indigo-500 focus:z-10 sm:text-sm md:text-lg"
                 placeholder="Title"
               />
               {errors.title && (
@@ -71,7 +71,7 @@ const BlogForm = () => {
                 id="description"
                 name="description"
                 {...register("description", { required: true })}
-                className="appearance-none rounded relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm md:text-lg"
+                className="appearance-none rounded relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none  focus:border-indigo-500 focus:z-10 sm:text-sm md:text-lg"
                 placeholder="Description"
                 rows={5}
               />
@@ -89,7 +89,7 @@ const BlogForm = () => {
                 type="file"
                 accept="image/*"
                 {...register("image", { required: true })}
-                className="appearance-none rounded relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm md:text-lg"
+                className="appearance-none rounded relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none  focus:border-indigo-500 focus:z-10 sm:text-sm md:text-lg"
               />
               {errors.image && (
                 <span className="text-red-500">Image is required</span>
@@ -99,7 +99,7 @@ const BlogForm = () => {
               <button
                 disabled={loading}
                 type="submit"
-                className="disabled:opacity-60 group w-fit relative flex justify-center py-2 px-6 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 self-end"
+                className="disabled:opacity-60 group w-fit relative flex justify-center py-2 px-6 border border-transparent text-sm font-medium rounded-md text-white bg-dark hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2  self-end"
               >
                 {loading ? "Submitting.." : "Submit"}
               </button>
