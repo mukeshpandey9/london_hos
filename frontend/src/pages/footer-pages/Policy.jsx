@@ -1,4 +1,4 @@
-﻿export default function PrivacyPolicy() {
+﻿export default function Policy() {
   return (
     <div className="px-6 lg:px-20 py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto">
@@ -8,7 +8,7 @@
           practices regarding the collection, use, and disclosure of information that you may provide through our
           website and services.
         </p>
-        <h2 className="text-2xl lg:text-3xl font-bold text-slate-700 mb-5">Inasdflkjasdfkformation Collection:</h2>
+        <h2 className="text-2xl lg:text-3xl font-bold text-slate-700 mb-5">Information Collection:</h2>
         <p className="text-slate-700 mb-5">
           We collect personal information that you voluntarily provide to us when you use our services, such as your
           name, email address, phone number, and payment information. We may also collect non-personal information such
