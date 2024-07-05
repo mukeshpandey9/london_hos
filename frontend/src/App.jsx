@@ -14,7 +14,7 @@ import Licensing from "./pages/footer-pages/Licensing";
 import DiscordServer from "./pages/footer-pages/DiscordServer";
 import LoginPage from "./pages/admin/Login/LoginPage";
 import Blog from "./pages/Blog/Blog";
-// import PrivacyPolicy from "./pages/footer-pages/PrivacyPolicy";
+import Policy from "./pages/footer-pages/Policy";
 
 function App() {
   const router = createBrowserRouter(
@@ -32,7 +32,7 @@ function App() {
         <Route path="discord-server" element={<DiscordServer />} />
         <Route path="terms-and-conditions" element={<TermsConditions />} />
         <Route path="licensing" element={<Licensing />} />
-        {/* <Route path="privacy-policy" element={<PrivacyPolicy />} /> */}
+        <Route path="privacy-policy" element={<Policy />} />
         <Route path="admin">
           <Route path="create-blog" element={<BlogForm />} />
           <Route path="login" element={<LoginPage />} />

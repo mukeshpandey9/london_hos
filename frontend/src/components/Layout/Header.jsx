@@ -25,14 +25,14 @@ export const Header = () => {
         <div className="flex flex-col md:flex-row md:items-center md:gap-5 md:w-full w-[80%]">
           <a
             href="tel:9675905075"
-            className="flex gap-1 items-center text-sm md:text-lg"
+            className="flex gap-1 items-center text-sm md:text-sm"
           >
             <CiMobile1 />
             +00 (123) 456 7890
           </a>
           <a
             href="mailto:Info@newlondonhospitality.com"
-            className="flex gap-1 items-center text-sm md:text-lg"
+            className="flex gap-1 items-center text-sm md:text-sm"
           >
             <CiMail />
             Info@newlondonhospitality.com
