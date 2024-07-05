@@ -21,7 +21,7 @@ export const Header = () => {
   return (
     <>
       {/* Top header section */}
-      <header className="relative bg-white flex flex-row lg:flex-row items-center justify-between px-5 md:px-20 py-4 h-[10vh] md:h-[16vh]">
+      <header className="relative bg-white flex flex-row lg:flex-row items-center justify-between px-5 md:px-20 py-2 h-[10vh]">
         <div className="flex flex-col md:flex-row md:items-center md:gap-5 md:w-full w-[80%]">
           <a
             href="tel:9675905075"
