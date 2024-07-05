@@ -10,12 +10,11 @@ const Footer = () => {
             <Link to="/">
               <img
                 src="/images/logo.jpeg"
-                className="mr-3 h-12 sm:h-20 mix-blend-multiply inline-block"
+                className="mr-3 h-12 sm:h-28 mix-blend-multiply inline-block"
                 alt="New London Hospitality Logo"
               />
               <div className="flex flex-col  text-black  mt-3">
                 <span className="whitespace-nowrap ">
-                  New London Hospitality
                 </span>
                 <span className="whitespace-nowrap "></span>
               </div>
@@ -25,7 +24,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
             {[
               {
-                title: "What we Offer",
+                title: "What We Do",
                 links: [
                   { name: "About Us", href: "about" },
                   { name: "Our blogs", href: "blogs" },
