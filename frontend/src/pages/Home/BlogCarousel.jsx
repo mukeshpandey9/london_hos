@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
 
@@ -34,9 +34,13 @@ const BlogCarousel = () => {
             pagination={{
               clickable: true,
             }}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
             navigation={true}
-            modules={[Pagination, Navigation]}
-            className="mySwiper px-12 py-10 md:px-20 md:py-20"
+            modules={[Pagination, Navigation, Autoplay]}
+            className="mySwiper px-5 py-10  md:py-20"
             breakpoints={{
               640: {
                 slidesPerView: 1,
@@ -63,13 +67,19 @@ const BlogCarousel = () => {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                       <Link to={`/blog/${blog._id}`}>
-                        <button className="bg-white text-black px-4 py-2 rounded">Read More</button>
+                        <button className="bg-white text-black px-4 py-2 rounded">
+                          Read More
+                        </button>
                       </Link>
                     </div>
                   </div>
                   <div className="p-2 md:p-4">
-                    <h2 className="text-lg md:text-xl font-bold mb-2">{blog.title}</h2>
-                    <p className="text-gray-700 text-sm">{blog.description.substring(0, 80) + "..."}</p>
+                    <h2 className="text-lg md:text-xl font-bold mb-2">
+                      {blog.title}
+                    </h2>
+                    <p className="text-gray-700 text-sm">
+                      {blog.description.substring(0, 80) + "..."}
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -77,7 +87,9 @@ const BlogCarousel = () => {
           </Swiper>
         </div>
       ) : (
-        <div className="text-center text-xl py-10 text-gray-400">No blogs available</div>
+        <div className="text-center text-xl py-10 text-gray-400">
+          No blogs available
+        </div>
       )}
     </>
   );
