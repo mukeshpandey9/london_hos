@@ -10,7 +10,7 @@ const Homepage = () => {
       {/* Hero Section */}
       <div className="h-full md:h-[95vh] relative px-5 py-10 md:px-20">
         <img
-          src="/images/hero.jpg"
+          src="https://www.talk-business.co.uk/wp-content/uploads/2016/04/shutterstock_194001071.jpg"
           alt=""
           className="absolute inset-0 w-full h-full md:max-h-[95vh] object-cover object-center -z-20"
         />
