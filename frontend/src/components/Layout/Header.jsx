@@ -21,7 +21,7 @@ export const Header = () => {
   return (
     <>
       {/* Top header section */}
-      <header className="relative bg-white flex flex-col lg:flex-row items-center justify-between px-1 md:px-20 py-4 h-[10vh] md:h-[16vh]">
+      <header className="relative bg-white flex flex-row lg:flex-row items-center justify-between px-5 md:px-20 py-4 h-[10vh] md:h-[16vh]">
         <div className="flex flex-col md:flex-row md:items-center md:gap-5 md:w-full w-[80%]">
           <a
             href="tel:9675905075"
@@ -38,9 +38,7 @@ export const Header = () => {
             Info@newlondonhospitality.com
           </a>
         </div>
-        <div className="md:w-24 w-20 absolute right-5 top-0 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-          <img src="/images/logo.png" className="w-full" alt="Logo" />
-        </div>
+
         <div className="hidden md:flex list-none items-center justify-between gap-3">
           <li>
             <CiHome className="text-2xl font-bold cursor-pointer" />
@@ -133,6 +131,20 @@ export const Header = () => {
                 {text}
               </NavLink>
             ))}
+            <div className="md:hidden flex list-none items-center justify-between gap-5">
+              <li>
+                <CiHome className="text-3xl font-bold cursor-pointer text-white" />
+              </li>
+              <li>
+                <CiFacebook className="text-3xl font-bold cursor-pointer text-white" />
+              </li>
+              <li>
+                <CiInstagram className="text-3xl font-bold cursor-pointer text-white" />
+              </li>
+              <li>
+                <CiTwitter className="text-3xl font-bold cursor-pointer text-white" />
+              </li>
+            </div>
           </div>
         </div>
       )}

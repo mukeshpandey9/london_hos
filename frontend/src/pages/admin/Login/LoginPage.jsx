@@ -6,17 +6,16 @@ export default function LoginPage() {
   const [formData, setFormData] = useState({ username: "", password: "" });
   const navigate = useNavigate();
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (formData.username == "NLHAdmin" && formData.password == "123456") {
       navigate("/admin/create-blog");
-    }
-    else {
+    } else {
       alert("Invalid Username or Password");
     }
     console.log("Form Data:", formData);
@@ -26,13 +25,18 @@ export default function LoginPage() {
     <section className="md:p-10">
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
-          <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">Log In</h2>
+          <div className="w-full xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
+            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">
+              Log In
+            </h2>
 
             <form onSubmit={handleSubmit} className="mt-8">
               <div className="space-y-5">
                 <div>
-                  <label htmlFor="username" className="text-base font-medium text-gray-900">
+                  <label
+                    htmlFor="username"
+                    className="text-base font-medium text-gray-900"
+                  >
                     Username
                   </label>
                   <div className="mt-2">
@@ -49,7 +53,10 @@ export default function LoginPage() {
                 </div>
                 <div>
                   <div className="flex items-center justify-between">
-                    <label htmlFor="password" className="text-base font-medium text-gray-900">
+                    <label
+                      htmlFor="password"
+                      className="text-base font-medium text-gray-900"
+                    >
                       Password
                     </label>
                   </div>

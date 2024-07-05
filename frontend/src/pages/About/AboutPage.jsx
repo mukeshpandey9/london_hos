@@ -3,12 +3,16 @@ import CountUp from "react-countup";
 
 export default function AboutPage() {
   return (
-    <div className="px-6 lg:px-20 py-20 bg-slate-50">
+    <div className="px-6 py-10 lg:px-20 md:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div>
-            <h1 className="text-4xl text-center md:text-left lg:text-6xl font-bold text-slate-700 mb-5">
-              Our Vision is Hospitality Transformation
+        <div className="flex flex-col lg:flex-row">
+          <div className="w-full lg:w-3/6">
+            <h1 className="text-4xl text-center md:text-left lg:text-5xl font-bold text-slate-700 mb-5">
+              Our Vision is
+              <p className="flex flex-col md:flex-row gap-1 md:gap-3">
+                <span className=""> Hospitality </span>
+                <span>Transformation</span>
+              </p>
             </h1>
             <p className="text-slate-700 mb-5 text-justify">
               New London Hospitality is a prominent business management company
@@ -21,7 +25,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="w-full lg:w-3/6 flex justify-center lg:justify-end">
             <img
               src="/images/about.jpg"
               alt="Hero"
