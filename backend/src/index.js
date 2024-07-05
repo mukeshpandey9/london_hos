@@ -19,7 +19,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-app.get("/api/hello", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ message: "Hello, World!" });
 });
 
