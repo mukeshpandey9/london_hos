@@ -47,11 +47,11 @@ export const Header = () => {
           </li>
         </div>
       </header>
-      <nav className="sticky top-0 flex items-center justify-between w-full px-3 py-4 md:px-20 bg-dark z-50">
-        <div className="text-xl font-semibold text-center text-zinc-100">
+      <nav className="sticky top-0 flex items-center justify-between w-full px-3 py-2 md:px-20 bg-dark z-50">
+        <div className="text-xs md:text-[1rem] border-2 border-gray-500 rounded-full p-2 h-12 w-12 flex items-center justify-center font-semibold text-center text-sky-400 ">
           NLH
         </div>
-        <div className="flex items-center gap-2 md:gap-10">
+        <div className="flex items-center gap-4 md:gap-10">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -84,7 +84,9 @@ export const Header = () => {
             `
             }
           >
-            Technology & Innovation
+            {window.innerWidth > 640
+              ? "Technology & Innovation"
+              : "Tech & Innovation"}
           </NavLink>
         </div>
       </nav>
