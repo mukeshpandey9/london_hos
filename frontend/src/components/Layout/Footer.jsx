@@ -10,12 +10,11 @@ const Footer = () => {
             <Link to="/">
               <img
                 src="/images/logo.jpeg"
-                className="mr-3 h-12 sm:h-28 mix-blend-multiply inline-block"
+                className="mr-3 w-40  mix-blend-multiply inline-block"
                 alt="New London Hospitality Logo"
               />
               <div className="flex flex-col  text-black  mt-3">
-                <span className="whitespace-nowrap ">
-                </span>
+                <span className="whitespace-nowrap "></span>
                 <span className="whitespace-nowrap "></span>
               </div>
             </Link>
@@ -28,9 +27,15 @@ const Footer = () => {
                 links: [
                   { name: "About Us", href: "about" },
                   { name: "Our blogs", href: "blogs" },
-                  { name: "Technology & Innovation", href: "technology-and-innovation" },
+                  {
+                    name: "Technology & Innovation",
+                    href: "technology-and-innovation",
+                  },
                   { name: "Business Operations", href: "business-operations" },
-                  { name: "Financial Management", href: "financial-management" },
+                  {
+                    name: "Financial Management",
+                    href: "financial-management",
+                  },
                   { name: "Customer Relations", href: "customer-relations" },
                   // { name: "Quality Assurance", href: "quality-assurance" },
                 ],
