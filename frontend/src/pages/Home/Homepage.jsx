@@ -14,7 +14,7 @@ const Homepage = () => {
           alt=""
           className="absolute inset-0 w-full h-full md:max-h-[95vh] object-cover object-center -z-20"
         />
-        <div className="w-full md:w-1/2 text-slate-300 z-50">
+        <div className="w-full md:w-1/2 text-gray-50 md:text-slate-200 z-50">
           <h1 className="text-4xl md:text-6xl font-bold">
             Transforming Hospitality, One Experience at a Time
           </h1>
