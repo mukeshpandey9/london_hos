@@ -8,7 +8,6 @@ import { Errorhandler } from "../utils/errorHandler.js";
 export const createBlog = CatchAsyncError(async (req, res, next) => {
   try {
     const blog = await req.body;
-    console.log(blog);
     blog.createdBy = "666c64fda0904b736c8d054e";
     const blogImage = req.files.image;
     const image = await uploadFile(blogImage.data);

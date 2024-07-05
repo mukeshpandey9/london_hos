@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <>
       {/* Top header section */}
-      <header className="relative bg-white flex flex-col lg:flex-row items-center justify-between px-1 md:px-20 py-4 h-[10vh] md:h-[12vh]">
+      <header className="relative bg-white flex flex-col lg:flex-row items-center justify-between px-1 md:px-20 py-4 h-[10vh] md:h-[16vh]">
         <div className="flex flex-col md:flex-row md:items-center md:gap-5 md:w-full w-[80%]">
           <a
             href="tel:9675905075"
@@ -29,8 +29,8 @@ export const Header = () => {
             Info@newlondonhospitality.com
           </a>
         </div>
-        <div className="w-10 scale-[1.75] absolute right-5 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-          <img src="/images/logo.jpeg" className="w-fit" alt="" />
+        <div className="w-24  absolute right-5 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+          <img src="/images/logo.jpeg" className="w-full" alt="" />
         </div>
         <div className="hidden md:flex list-none items-center justify-between gap-3">
           <li className="">
