@@ -26,7 +26,9 @@ const Blog = ({}) => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
-            <h1 className="text-xl text-center md:text-left lg:text-5xl font-bold text-slate-700 mb-5">{blog.title}</h1>
+            <h1 className="text-xl text-center md:text-left lg:text-5xl font-bold text-slate-700 mb-5">
+              {blog.title}
+            </h1>
           </div>
 
           <div className="flex justify-center lg:justify-end">
@@ -37,7 +39,9 @@ const Blog = ({}) => {
             />
           </div>
         </div>
-        <p className="text-slate-700 mb-5 mt-10">{blog.description}</p>
+        <p className="text-slate-700 mb-5 mt-10 text-justify">
+          {blog.description}
+        </p>
       </div>
     </div>
   );
