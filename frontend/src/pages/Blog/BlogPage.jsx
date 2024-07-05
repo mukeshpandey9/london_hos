@@ -2,28 +2,7 @@ import React, { useEffect, useState } from "react";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
 
-// FeaturedPost Component
-const FeaturedPost = ({ post }) => {
-  return (
-    <div className="bg-white border border-gray-300 shadow-sm rounded-lg overflow-hidden">
-      <img
-        src={post.image}
-        alt={post.title}
-        className="w-full h-64 object-cover"
-      />
-      <div className="p-6">
-        <h2 className="text-3xl font-bold mb-2">{post.title}</h2>
-        <p className="text-gray-700 mb-2">
-          {post.user ?? "Admin"} - {post.date.split("T")[0]}
-        </p>
-        <p className="text-gray-700 mb-4">{post.description}</p>
-        <a href={post.link} className="text-blue-500 hover:underline">
-          Read More
-        </a>
-      </div>
-    </div>
-  );
-};
+
 
 const BlogPostCard = ({ post }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -88,9 +67,9 @@ const BlogPage = () => {
         <h1 className="text-4xl md:text-5xl font-semibold md:font-extrabold text-center mb-10">
           Discover Our Latest Stories
         </h1>
-        <section className="py-10 px-5 md:px-20">
+       {/*  <section className="py-10 px-5 md:px-20">
           {featuredPost && <FeaturedPost post={featuredPost} />}
-        </section>
+        </section> */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 bg-gray-100 py-10 px-5 md:px-20 md:py-20">
           {blogData.length > 0 &&
             blogData.map((post, index) => (
@@ -104,3 +83,26 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+
+// FeaturedPost Component
+// const FeaturedPost = ({ post }) => {
+//   return (
+//     <div className="bg-white border border-gray-300 shadow-sm rounded-lg overflow-hidden">
+//       <img
+//         src={post.image}
+//         alt={post.title}
+//         className="w-full h-64 object-cover"
+//       />
+//       <div className="p-6">
+//         <h2 className="text-3xl font-bold mb-2">{post.title}</h2>
+//         <p className="text-gray-700 mb-2">
+//           {post.user ?? "Admin"} - {post.date.split("T")[0]}
+//         </p>
+//         <p className="text-gray-700 mb-4">{post.description}</p>
+//         <a href={post.link} className="text-blue-500 hover:underline">
+//           Read More
+//         </a>
+//       </div>
+//     </div>
+//   );
+// };

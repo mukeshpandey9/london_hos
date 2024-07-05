@@ -6,7 +6,7 @@ export default function BusinessOperationsPage() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>
-            <h1 className="text-4xl text-center md:text-left lg:text-6xl font-bold text-slate-700 mb-5">
+            <h1 className="text-4xl text-center  whitespace-nowrap md:text-left lg:text-6xl font-bold text-slate-700 mb-5">
               Business Operations
             </h1>
             <p className="text-slate-700 mb-5">

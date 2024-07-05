@@ -22,11 +22,22 @@ const Blog = ({}) => {
   if (!blog) return <p>Loading...</p>;
 
   return (
-    <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden my-10">
-      <img className="w-full h-64 object-cover object-center" src={blog.image} alt="Blog Cover" />
-      <div className="p-4">
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">{blog.title}</h2>
-        <p className="text-gray-600">{blog.description}</p>
+    <div className="px-6 lg:px-20 py-20 bg-slate-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div>
+            <h1 className="text-xl text-center md:text-left lg:text-5xl font-bold text-slate-700 mb-5">{blog.title}</h1>
+          </div>
+
+          <div className="flex justify-center lg:justify-end">
+            <img
+              src={blog.image}
+              alt="Technology and Innovation"
+              className="rounded-lg shadow-lg w-full h-auto object-cover lg:w-96"
+            />
+          </div>
+        </div>
+        <p className="text-slate-700 mb-5 mt-10">{blog.description}</p>
       </div>
     </div>
   );
