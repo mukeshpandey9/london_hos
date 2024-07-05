@@ -22,7 +22,7 @@ export const registerUser = CatchAsyncError(async (req, res, next) => {
 
 export const loginUser = CatchAsyncError(async (req, res, next) => {
   try {
-    const { email, password } = req.body;
+    const { username, password } = req.body;
 
     const user = await User.findOne({ email }).select("+password");
 

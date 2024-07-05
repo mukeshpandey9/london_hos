@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../../utils/API";
+import { Link } from "react-router-dom";
 
 // FeaturedPost Component
 const FeaturedPost = ({ post }) => {
@@ -24,7 +25,6 @@ const FeaturedPost = ({ post }) => {
   );
 };
 
-// BlogPostCard Component
 const BlogPostCard = ({ post }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -63,69 +63,13 @@ const BlogPostCard = ({ post }) => {
   );
 };
 const BlogPage = () => {
-  // const featuredPost = {
-  //   title: "Exploring the Beauty of Nature",
-  //   description:
-  //     "Discover the wonders of nature as we explore beautiful landscapes and diverse wildlife.",
-  //   image: "https://newlondonhospitality.vercel.app/tech1.webp",
-  //   link: "#",
-  // };
-
-  // const blogPosts = [
-  //   {
-  //     title: "Tech Innovations in 2024",
-  //     description:
-  //       "A look at the latest technological advancements and how they are shaping our future.",
-  //     image: "https://newlondonhospitality.vercel.app/tech2.webp",
-  //     link: "#",
-  //     user: "John Doe",
-  //     date: "July 3, 2024",
-  //   },
-  //   {
-  //     title: "Healthy Eating Habits",
-  //     description:
-  //       "Learn about healthy eating habits and how they can improve your overall well-being.",
-  //     image: "https://newlondonhospitality.vercel.app/tech1.webp",
-  //     link: "#",
-  //     user: "Jane Smith",
-  //     date: "July 1, 2024",
-  //   },
-  //   {
-  //     title: "Travel Guide: Top Destinations",
-  //     description:
-  //       "Planning a trip? Check out our travel guide for the top destinations to visit this year.",
-  //     image: "https://newlondonhospitality.vercel.app/tech1.webp",
-  //     link: "#",
-  //     user: "Alice Johnson",
-  //     date: "June 29, 2024",
-  //   },
-  //   {
-  //     title: "The Art of Photography",
-  //     description:
-  //       "Tips and tricks for capturing stunning photos and improving your photography skills.",
-  //     image: "https://newlondonhospitality.vercel.app/tech1.webp",
-  //     link: "#",
-  //     user: "Bob Brown",
-  //     date: "June 25, 2024",
-  //   },
-  //   {
-  //     title: "Fitness Tips for a Healthy Lifestyle",
-  //     description:
-  //       "Get fit and stay healthy with our expert fitness tips and workout routines.",
-  //     image: "https://newlondonhospitality.vercel.app/tech1.webp",
-  //     link: "#",
-  //     user: "Charlie Davis",
-  //     date: "June 22, 2024",
-  //   },
-  // ];
-
+  
   const [blogData, setBlogData] = useState([]);
   const [featuredPost, setFeaturedPost] = useState();
 
   const getBlogData = async () => {
     try {
       const { data } = await API.get("/api/v1/blog");
-      console.log(data?.data);
       setBlogData(data?.data);
       setFeaturedPost(data?.data[0]);
     } catch (error) {
@@ -150,7 +94,8 @@ const BlogPage = () => {
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-10 bg-gray-100 py-10 px-5 md:px-20 md:py-20">
           {blogData.length > 0 &&
             blogData.map((post, index) => (
-              <BlogPostCard key={index} post={post} />
+             <Link to={`/blog/${post._id}`}>
+              <BlogPostCard key={index} post={post} /></Link>
             ))}
         </section>
       </main>

@@ -46,12 +46,6 @@ const Services = () => {
       description:
         "We handle all aspects of HR management, including recruitment, training, and employee development.",
     },
-    /* {
-      icon: <Activity className="h-8 w-8 text-gray-600 " />,
-      title: "Quality Assurance",
-      description:
-        "We ensure high-quality standards across all operations to deliver exceptional service and client satisfaction.",
-    }, */
   ];
 
   return (
@@ -59,7 +53,7 @@ const Services = () => {
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="mb-8  lg:mb-16">
           <h2 className="mb-4 text-4xl font-semibold md:font-extrabold text-center text-gray-900 ">
-            What We Offer
+            What We Do
           </h2>
         </div>
         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">

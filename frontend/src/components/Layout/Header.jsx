@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  CiFacebook,
-  CiHome,
-  CiInstagram,
-  CiMail,
-  CiMobile1,
-  CiTwitter,
-} from "react-icons/ci";
+import { CiFacebook, CiHome, CiInstagram, CiMail, CiMobile1, CiTwitter } from "react-icons/ci";
 import { NavLink } from "react-router-dom";
 export const Header = () => {
   return (
@@ -14,23 +7,17 @@ export const Header = () => {
       {/* Top header section */}
       <header className="relative bg-white flex flex-col lg:flex-row items-center justify-between px-1 md:px-20 py-4 h-[10vh] md:h-[16vh]">
         <div className="flex flex-col md:flex-row md:items-center md:gap-5 md:w-full w-[80%]">
-          <a
-            href="tel:9675905075"
-            className="flex gap-1 items-center text-sm md:text-lg"
-          >
+          <a href="tel:9675905075" className="flex gap-1 items-center text-sm md:text-lg">
             <CiMobile1 />
             +00 (123) 456 7890
           </a>
-          <a
-            href="mailto:Info@newlondonhospitality.com"
-            className="flex gap-1 items-center text-sm md:text-lg"
-          >
+          <a href="mailto:Info@newlondonhospitality.com" className="flex gap-1 items-center text-sm md:text-lg">
             <CiMail />
             Info@newlondonhospitality.com
           </a>
         </div>
         <div className="w-24  absolute right-5 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-          <img src="/images/logo.jpeg" className="w-full" alt="" />
+          <img src="/images/logo.png" className="w-full" alt="" />
         </div>
         <div className="hidden md:flex list-none items-center justify-between gap-3">
           <li className="">
@@ -47,47 +34,31 @@ export const Header = () => {
           </li>
         </div>
       </header>
-      <nav className="sticky top-0 flex items-center justify-between w-full px-3 py-2 md:px-20 bg-dark z-50">
-        <div className="text-xs md:text-[1rem] border-2 border-gray-500 rounded-full p-2 h-12 w-12 flex items-center justify-center font-semibold text-center text-sky-400 ">
-          NLH
-        </div>
-        <div className="flex items-center gap-4 md:gap-10">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `text-sm md:text-[1rem] font-semibold  
-              ${isActive ? "text-white" : "text-gray-400 hover:text-gray-100 "}
-            `
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `text-sm md:text-[1rem] font-semibold  
-              ${
-                isActive
-                  ? "text-gray-100"
-                  : "text-gray-400 hover:text-gray-100 "
+      <nav className="sticky top-0 flex items-center justify-between w-full px-3 py-2 md:px-20 bg-black z-50">
+        <img src="/images/logo1.png" className="w-24" alt="" />
+        <div className="flex items-center md:gap-8">
+          {[
+            { path: "/", text: "Home" },
+            { path: "/about", text: "About Us" },
+            { path: "/blogs", text: "Blogs" },
+            { path: "/technology-and-innovation", text: "Technology & Innovation" },
+            { path: "/business-operations", text: "Business Operations" },
+            { path: "/financial-management", text: "Financial Management" },
+            { path: "/customer-relations", text: "Customer Relations" },
+            { path: "/admin/login", text: "Login" },
+          ].map(({ path, text }) => (
+            <NavLink
+              key={path}
+              to={path}
+              className={({ isActive }) =>
+                `text-sm  font-medium  
+                ${isActive ? "text-gray-100" : "text-gray-500 hover:text-gray-400 "}
+              `
               }
-            `
-            }
-          >
-            About Us
-          </NavLink>
-          <NavLink
-            to="/blogs"
-            className={({ isActive }) =>
-              `text-sm md:text-[1rem] font-semibold  
-              ${isActive ? "text-white" : "text-gray-400 hover:text-gray-100 "}
-            `
-            }
-          >
-            {window.innerWidth > 640
-              ? "Technology & Innovation"
-              : "Tech & Innovation"}
-          </NavLink>
+            >
+              {window.innerWidth > 640 || path !== "/blogs" ? text : "Tech & Innovation"}
+            </NavLink>
+          ))}
         </div>
       </nav>
     </>

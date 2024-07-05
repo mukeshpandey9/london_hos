@@ -27,17 +27,19 @@ const Footer = () => {
               {
                 title: "What we Offer",
                 links: [
-                  { name: "Business Operations", href: "#" },
-                  { name: "Financial Management", href: "#" },
-                  { name: "Technology & Innovation", href: "#" },
-                  { name: "Customer Relations", href: "#" },
-                  { name: "Quality Assurance", href: "#" },
+                  { name: "About Us", href: "about" },
+                  { name: "Our blogs", href: "blogs" },
+                  { name: "Technology & Innovation", href: "technology-and-innovation" },
+                  { name: "Business Operations", href: "business-operations" },
+                  { name: "Financial Management", href: "financial-management" },
+                  { name: "Customer Relations", href: "customer-relations" },
+                  // { name: "Quality Assurance", href: "quality-assurance" },
                 ],
               },
               {
                 title: "Help center",
                 links: [
-                  { name: "Discord Server", href: "#" },
+                  { name: "Discord Server", href: "discord-server" },
                   { name: "Twitter", href: "#" },
                   { name: "Facebook", href: "#" },
                   { name: "Contact Us", href: "#" },
@@ -46,9 +48,9 @@ const Footer = () => {
               {
                 title: "Legal",
                 links: [
-                  { name: "Privacy Policy", href: "#" },
-                  { name: "Licensing", href: "#" },
-                  { name: "Terms & Conditions", href: "#" },
+                  { name: "Privacy Policy", href: "privacy-policy" },
+                  { name: "Licensing", href: "licensing" },
+                  { name: "Terms & Conditions", href: "terms-and-conditions" },
                 ],
               },
               /* {
@@ -68,9 +70,9 @@ const Footer = () => {
                 <ul className="text-gray-500 font-medium">
                   {section.links.map((link, linkIdx) => (
                     <li className="mb-4" key={linkIdx}>
-                      <a href={link.href} className="hover:underline">
+                      <Link to={link.href} className="hover:underline">
                         {link.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
