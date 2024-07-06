@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 /* Media query for mobiles*/
+* {
+  scroll-behavior: smooth;
+}
 
 @media (max-width: 640px) {
   .swiper-button-next {
