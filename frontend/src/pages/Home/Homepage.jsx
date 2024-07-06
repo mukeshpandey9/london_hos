@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BlogCarousel from "./BlogCarousel";
 import Services from "./Services";
 import TestimonialCarousel from "./TestimonialCarousel";
 import Contact from "./Contact";
+import API from "../../utils/API";
 
 const Homepage = () => {
+  const increaseVisitorCount = async () => {
+    await API.get("/api/v1/visitor-count");
+  };
+
+  useEffect(() => {
+    increaseVisitorCount();
+  }, []);
   return (
     <div className="h-full w-full">
       {/* Hero Section */}
@@ -46,7 +54,7 @@ const Homepage = () => {
         </h1>
         <TestimonialCarousel />
       </div>
-      <div className="w-full h-full px-5 md:px-10 bg-gray-100">
+      <div id="contact" className="w-full h-full px-5 md:px-10 bg-gray-100">
         <Contact />
       </div>
     </div>

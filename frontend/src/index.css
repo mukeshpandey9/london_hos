@@ -12,3 +12,19 @@
     display: none;
   }
 }
+
+.swiper-button-next {
+  color: black;
+  right: -5px;
+}
+.swiper-button-prev {
+  color: black;
+  left: -5px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 2rem;
+
+  font-weight: bolder;
+}

@@ -40,7 +40,7 @@ const BlogCarousel = () => {
             }}
             navigation={true}
             modules={[Pagination, Navigation, Autoplay]}
-            className="mySwiper px-5 py-10  md:py-20"
+            className="mySwiper px-10 py-10  md:py-20"
             breakpoints={{
               640: {
                 slidesPerView: 1,

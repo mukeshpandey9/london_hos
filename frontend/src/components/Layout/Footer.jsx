@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import API from "../../utils/API";
 
 const Footer = () => {
+  const [visitor, setVisitor] = useState(0);
+  const getVisitors = async () => {
+    try {
+      const { data } = await API.get("/api/v1/visitors");
+      setVisitor(data.visitors);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  useEffect(() => {
+    getVisitors();
+  }, []);
   return (
     <footer className=" bg-slate-100 ">
       <div className="w-full py-5 px-5 md:px-20">
@@ -46,7 +60,7 @@ const Footer = () => {
                   { name: "Discord Server", href: "discord-server" },
                   { name: "Twitter", href: "#" },
                   { name: "Facebook", href: "#" },
-                  { name: "Contact Us", href: "#" },
+                  { name: "Contact Us", href: "#contact" },
                 ],
               },
               {
@@ -74,14 +88,25 @@ const Footer = () => {
                 <ul className="text-gray-500 font-medium">
                   {section.links.map((link, linkIdx) => (
                     <li className="mb-4" key={linkIdx}>
-                      <Link to={link.href} className="hover:underline">
-                        {link.name}
-                      </Link>
+                      {link.name === "Contact Us" ? (
+                        <a href={link.href} className="hover:underline">
+                          {link.name}
+                        </a>
+                      ) : (
+                        <Link to={link.href} className="hover:underline">
+                          {link.name}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
               </div>
             ))}
+
+            <div className="rounded-full border-4 border-dark w-24 h-24 flex flex-col items-center justify-center">
+              <h1 className="text-lg text-gray-700 font-semibold">Visitors</h1>
+              <p className="text-lg text-slate-700 font-bold">{visitor}</p>
+            </div>
           </div>
         </div>
         <div className="w-full px-4 py-6 bg-gray-100 md:flex md:items-center md:justify-between">
