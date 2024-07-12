@@ -74,9 +74,10 @@ const Footer = () => {
             }, */
             ].map((section, idx) => (
               <div key={idx}>
-                <h2 className="mb-6 text-sm font-semibold underline text-gray-100 uppercase ">
+                <div className="mb-6 text-sm font-semibold relative text-gray-100 uppercase ">
                   {section.title}
-                </h2>
+                  <div className="absolute -bottom-2 h-1 w-1/2 bg-white rounded-full"></div>
+                </div>
                 <ul className="text-gray-100 font-medium">
                   {section.links.map((link, linkIdx) => (
                     <li className="mb-4" key={linkIdx}>
@@ -190,7 +191,7 @@ const Footer = () => {
               ].map((social, socialIdx) => (
                 <a
                   href={social.href}
-                  className="text-gray-400 hover:text-gray-900"
+                  className="text-gray-100 hover:text-gray-900"
                   key={socialIdx}
                 >
                   {social.icon}
