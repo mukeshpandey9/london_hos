@@ -16,17 +16,20 @@ const Homepage = () => {
   return (
     <div className="h-full w-full">
       {/* Hero Section */}
-      <div className="h-full md:h-[95vh] relative px-5 py-10 md:px-20">
+      <div className="h-full md:h-[80vh] relative px-5 py-1 pt-6 md:px-20">
         <img
           src={HomeImage}
           alt=""
           className="absolute inset-0 w-full h-full md:max-h-[95vh] object-cover object-center -z-20"
         />
         <div className="w-full md:w-1/2 text-gray-50 md:text-slate-200 z-50">
-          <h1 className="text-4xl md:text-6xl font-bold">
+          <h1
+            className="text-4xl md:text-[3.6rem] font-bold"
+            style={{ lineHeight: 1 }}
+          >
             Transforming Hospitality, One Experience at a Time
           </h1>
-          <p className="text-[1rem] md:text-xl py-10">
+          <p className="text-[1.1rem]  py-5">
             Elevating guest satisfaction through innovation, excellence, and
             personalized service. Discover the future of hospitality with New
             London Hospitality

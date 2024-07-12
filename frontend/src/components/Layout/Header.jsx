@@ -21,7 +21,7 @@ export const Header = () => {
   return (
     <>
       {/* Top header section */}
-      <header className="relative bg-white flex flex-row lg:flex-row items-center justify-between px-5 md:px-20 py-2 h-[10vh]">
+      <header className="relative bg-white flex flex-row lg:flex-row items-center justify-between px-5 md:px-20 py-2 h-[7vh]">
         <div className="flex flex-col md:flex-row md:items-center md:gap-5 md:w-full w-[80%]">
           <a
             href="tel:9675905075"
@@ -56,7 +56,7 @@ export const Header = () => {
       </header>
 
       {/* Main navbar */}
-      <nav className="sticky top-0 flex items-center justify-between w-full px-3 py-2 md:px-20 bg-black z-50">
+      <nav className="sticky top-0 flex border-b border-white items-center justify-between w-full px-3 py-2 md:px-20 bg-black z-50">
         <img src="/images/logo1.png" className="w-24" alt="Logo" />
         <div className="flex-row items-center md:gap-8 hidden lg:flex">
           {[

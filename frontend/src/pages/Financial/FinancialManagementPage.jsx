@@ -12,7 +12,10 @@ export default function FinancialManagementPage() {
             <p className="text-slate-700 text-justify mb-5">
               At New London Hospitality, our financial management services
               encompass budgeting, accounting, and financial reporting to ensure
-              each property's profitability.
+              each property's profitability. We employ accurate accounting
+              practices to track all financial transactions, ensuring compliance
+              with regulations and providing real-time insights into financial
+              performance.
             </p>
           </div>
 
@@ -65,7 +68,11 @@ export default function FinancialManagementPage() {
           <p className="text-gray-700 text-justify mb-5">
             At New London Hospitality, our financial experts are committed to
             providing the highest level of service, ensuring our clients achieve
-            their financial goals and secure long-term success.
+            their financial goals and secure long-term success. We understand
+            that sound financial management is crucial to the success of any
+            hospitality business. Our dedicated team of financial experts is
+            committed to providing the highest level of service, ensuring that
+            our clients achieve their financial goals.
           </p>
         </div>
       </div>

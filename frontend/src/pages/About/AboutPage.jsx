@@ -40,7 +40,7 @@ export default function AboutPage() {
               <CountUp end={8} />+
             </span>
             <span className="text-gray-900 font-semibold">
-              years of experience
+              Years of experience
             </span>
           </div>
           {/* <div className="flex flex-col justify-center items-center">
@@ -61,7 +61,7 @@ export default function AboutPage() {
             <span className="md:text-4xl text-3xl text-gray-600 font-bold">
               <CountUp end={15} />+
             </span>
-            <span className="text-gray-900 font-semibold">trusted hotels</span>
+            <span className="text-gray-900 font-semibold">Trusted hotels</span>
           </div>
         </div>
 
@@ -137,18 +137,18 @@ export default function AboutPage() {
               consistency, safety, and compliance across all managed properties.
             </p>
           </div>
-          <div className="p-4 border rounded-lg bg-white shadow-sm">
-            <h2 className="text-2xl font-semibold text-dark mb-4">
-              Our Commitment
-            </h2>
-            <p className="text-gray-700 text-justify">
-              At New London Hospitality, we are dedicated to exceeding
-              expectations, driving profitability, and creating memorable guest
-              experiences. With a focus on operational excellence, financial
-              prudence, and innovation, we partner with property owners to
-              unlock the full potential of their hospitality investments.
-            </p>
-          </div>
+        </div>
+        <div className="p-4 rounded-lg  ">
+          <h2 className="text-2xl font-semibold text-dark mb-4">
+            Our Commitment
+          </h2>
+          <p className="text-gray-700 text-justify">
+            At New London Hospitality, we are dedicated to exceeding
+            expectations, driving profitability, and creating memorable guest
+            experiences. With a focus on operational excellence, financial
+            prudence, and innovation, we partner with property owners to unlock
+            the full potential of their hospitality investments.
+          </p>
         </div>
       </div>
     </div>

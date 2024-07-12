@@ -10,9 +10,11 @@ export default function BusinessOperationsPage() {
               Business Operations
             </h1>
             <p className="text-slate-700 mb-5 text-justify">
-              At New London Hospitality, we optimize business operations to
-              ensure efficiency and guest satisfaction. From staffing and
-              training to performance management and client satisfaction.
+              At New London Hospitality, we excel in optimizing business
+              operations to enhance efficiency and guest satisfaction. From
+              streamlining processes to ensuring seamless day-to-day
+              functioning, our focus is on delivering exceptional service while
+              maximizing operational effectiveness.
             </p>
           </div>
           <div className="flex justify-center lg:justify-end">
@@ -93,7 +95,11 @@ export default function BusinessOperationsPage() {
           <p className="text-gray-700 text-justify mb-5">
             New London Hospitality excels in business operations, ensuring
             exceptional service and driving success in the hospitality sector
-            through dedication and continuous improvement.
+            through dedication and continuous improvement. At New London
+            Hospitality, we understand that successful business operations are
+            the foundation of a thriving hospitality enterprise. Our meticulous
+            approach and dedication to excellence ensure that we deliver
+            outstanding results, time and time again.
           </p>
         </div>
       </div>

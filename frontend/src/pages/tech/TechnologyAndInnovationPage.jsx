@@ -11,7 +11,10 @@ export default function TechnologyAndInnovationPage() {
             </h1>
             <p className="text-slate-700 text-justify mb-5">
               Embracing cutting-edge technology and fostering innovation are key
-              pillars of our strategy at New London Hospitality.
+              pillars of our strategy at New London Hospitality. We leverage the
+              latest hospitality management systems and innovative solutions to
+              enhance guest experiences, streamline operations, and stay ahead
+              in a rapidly evolving industry.
             </p>
           </div>
           <div className="flex justify-center lg:justify-end">
@@ -95,8 +98,10 @@ export default function TechnologyAndInnovationPage() {
           </ul>
           <p className="text-gray-700 text-justify mb-5">
             At New London Hospitality, we believe that technology and innovation
-            are crucial for providing exceptional guest experiences and
-            maintaining our competitive edge in the hospitality industry.
+            are key to our success. Our dedicated team is committed to
+            leveraging the latest advancements to provide the best possible
+            experience for our guests and ensure the ongoing success of our
+            operations.
           </p>
         </div>
       </div>

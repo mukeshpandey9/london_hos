@@ -12,8 +12,9 @@ export default function CustomerRelationsPage() {
             <p className="text-slate-700 text-justify mb-5">
               Exceptional customer relations lie at the heart of our service
               philosophy. At New London Hospitality, we prioritize building
-              strong guest relationships through personalized experiences and
-              attentive service.
+              strong guest relationships through personalized experiences,
+              attentive service, and responsiveness to feedback. Our goal is to
+              foster loyalty and drive guest satisfaction.
             </p>
           </div>
 
@@ -83,7 +84,10 @@ export default function CustomerRelationsPage() {
             At New London Hospitality, exceptional customer relations are key to
             our success. Our team is dedicated to providing the highest level of
             service, ensuring every guest has a positive and memorable
-            experience.
+            experience. We understand that exceptional customer relations are
+            key to our success. Our dedicated team is committed to providing the
+            highest level of service, ensuring that every guest has a positive
+            and memorable experience.
           </p>
         </div>
       </div>
