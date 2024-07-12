@@ -4,7 +4,7 @@ import Services from "./Services";
 import TestimonialCarousel from "./TestimonialCarousel";
 import Contact from "./Contact";
 import API from "../../utils/API";
-
+import HomeImage from "/images/hero (2).jpg";
 const Homepage = () => {
   const increaseVisitorCount = async () => {
     await API.get("/api/v1/visitor-count");
@@ -18,7 +18,7 @@ const Homepage = () => {
       {/* Hero Section */}
       <div className="h-full md:h-[95vh] relative px-5 py-10 md:px-20">
         <img
-          src="https://www.talk-business.co.uk/wp-content/uploads/2016/04/shutterstock_194001071.jpg"
+          src={HomeImage}
           alt=""
           className="absolute inset-0 w-full h-full md:max-h-[95vh] object-cover object-center -z-20"
         />
@@ -45,15 +45,15 @@ const Homepage = () => {
         </h1>
         <BlogCarousel />
       </div>
-      <div className="px-5 py-5 md:py-10 md:px-20 bg-gray-100">
+      <div className="px-5 py-5 md:py-10 md:px-20 bg-white">
         <Services />
       </div>
-      <div className="w-full h-full py-10 md:py-20 px-5 md:px-10">
+      {/* <div className="w-full h-full py-10 md:py-20 px-5 md:px-10">
         <h1 className="text-4xl font-semibold md:font-extrabold text-center">
           Testimonials from Our Valued Guests
         </h1>
         <TestimonialCarousel />
-      </div>
+      </div> */}
       <div id="contact" className="w-full h-full px-5 md:px-10 bg-gray-100">
         <Contact />
       </div>

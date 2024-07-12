@@ -121,18 +121,7 @@ export default function AboutPage() {
               guest satisfaction.
             </p>
           </div>
-          <div className="p-4 border rounded-lg bg-white shadow-sm">
-            <h2 className="text-2xl font-semibold text-dark mb-4">
-              Human Resources
-            </h2>
-            <p className="text-gray-700 text-justify">
-              Our commitment to excellence extends to our people. We invest in
-              recruiting top talent, provide comprehensive training programs,
-              and foster a culture of continuous learning and development. By
-              empowering our teams, we ensure they deliver the highest standards
-              of service and professionalism.
-            </p>
-          </div>
+
           <div className="p-4 border rounded-lg bg-white shadow-sm">
             <h2 className="text-2xl font-semibold text-dark mb-4">
               Quality Assurance

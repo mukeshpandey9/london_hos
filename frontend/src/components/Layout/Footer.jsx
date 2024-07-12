@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 import API from "../../utils/API";
 
 const Footer = () => {
-  const [visitor, setVisitor] = useState(0);
-  const getVisitors = async () => {
-    try {
-      const { data } = await API.get("/api/v1/visitors");
-      setVisitor(data.visitors);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+  // const [visitor, setVisitor] = useState(0);
+  // const getVisitors = async () => {
+  //   try {
+  //     const { data } = await API.get("/api/v1/visitors");
+  //     setVisitor(data.visitors);
+  //   } catch (error) {
+  //     console.log(error.message);
+  //   }
+  // };
 
-  useEffect(() => {
-    getVisitors();
-  }, []);
+  // useEffect(() => {
+  //   getVisitors();
+  // }, []);
   return (
     <footer className=" bg-slate-100 ">
       <div className="w-full py-5 px-5 md:px-20">
@@ -34,7 +34,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 ">
             {[
               {
                 title: "What We Do",
@@ -54,15 +54,7 @@ const Footer = () => {
                   // { name: "Quality Assurance", href: "quality-assurance" },
                 ],
               },
-              {
-                title: "Help center",
-                links: [
-                  { name: "Discord Server", href: "discord-server" },
-                  { name: "Twitter", href: "#" },
-                  { name: "Facebook", href: "#" },
-                  { name: "Contact Us", href: "#contact" },
-                ],
-              },
+
               {
                 title: "Legal",
                 links: [
@@ -103,10 +95,10 @@ const Footer = () => {
               </div>
             ))}
 
-            <div className="rounded-full border-4 border-dark w-24 h-24 flex flex-col items-center justify-center">
+            {/* <div className="rounded-full border-4 border-dark w-24 h-24 flex flex-col items-center justify-center">
               <h1 className="text-lg text-gray-700 font-semibold">Visitors</h1>
               <p className="text-lg text-slate-700 font-bold">{visitor}</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="w-full px-4 py-6 bg-gray-100 md:flex md:items-center md:justify-between">

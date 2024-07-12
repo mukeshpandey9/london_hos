@@ -12,10 +12,7 @@ export default function FinancialManagementPage() {
             <p className="text-slate-700 text-justify mb-5">
               At New London Hospitality, our financial management services
               encompass budgeting, accounting, and financial reporting to ensure
-              each property's profitability. We employ accurate accounting
-              practices to track all financial transactions, ensuring compliance
-              with regulations and providing real-time insights into financial
-              performance.
+              each property's profitability.
             </p>
           </div>
 
@@ -30,110 +27,45 @@ export default function FinancialManagementPage() {
 
         <div className="mt-12">
           <p className="text-gray-700 text-justify mb-5">
-            New London Hospitality is committed to maintaining the financial
-            health and growth of each property we manage. Our integrated
-            financial management practices are designed to provide comprehensive
-            financial oversight and strategic support.
+            Our financial management practices provide comprehensive financial
+            oversight and strategic support, ensuring the financial health and
+            growth of each property.
           </p>
           <ul className="list-disc list-inside text-gray-700 text-justify mb-5">
             <li>
-              <strong>Budgeting:</strong> We develop detailed budgets to plan
-              and control expenditures, ensuring that resources are allocated
-              efficiently and effectively.
+              <strong>Budgeting:</strong> Detailed budgets to plan and control
+              expenditures.
             </li>
             <li>
-              <strong>Accounting:</strong> Our accurate accounting practices
-              track all financial transactions, ensuring compliance with
-              regulations and providing real-time insights into financial
-              performance.
+              <strong>Accounting:</strong> Accurate tracking of all financial
+              transactions.
             </li>
             <li>
-              <strong>Financial Reporting:</strong> We keep property owners
-              informed through comprehensive reports, including income
-              statements, balance sheets, and cash flow statements. These
-              reports allow for strategic decision-making and maintain
-              accountability.
+              <strong>Financial Reporting:</strong> Comprehensive reports for
+              informed decision-making.
             </li>
           </ul>
-          <p className="text-gray-700 text-justify mb-5">
-            Through these integrated financial management practices, we secure
-            the financial health and growth of each property we manage. Our
-            commitment to transparency and accuracy ensures that our clients
-            have the information they need to make informed decisions.
-          </p>
-          <h2 className="text-2xl font-semibold text-dark mb-4">
-            Key Components of Our Financial Management Approach
-          </h2>
-          <ul className="list-disc list-inside text-gray-700 text-justify mb-5">
-            <li>
-              <strong>Accurate Accounting:</strong> We employ meticulous
-              accounting practices to track every financial transaction,
-              ensuring that all financial data is accurate and up-to-date.
-            </li>
-            <li>
-              <strong>Regulatory Compliance:</strong> Our financial management
-              practices adhere to all relevant regulations, ensuring that our
-              clients remain in compliance with legal requirements.
-            </li>
-            <li>
-              <strong>Real-Time Insights:</strong> By providing real-time
-              insights into financial performance, we help our clients stay
-              informed about the financial health of their properties.
-            </li>
-            <li>
-              <strong>Comprehensive Reporting:</strong> Our detailed financial
-              reports include income statements, balance sheets, and cash flow
-              statements, providing a complete picture of each property's
-              financial performance.
-            </li>
-            <li>
-              <strong>Strategic Decision-Making:</strong> With comprehensive and
-              accurate financial data, our clients are equipped to make
-              strategic decisions that drive growth and profitability.
-            </li>
-          </ul>
-          <p className="text-gray-700 text-justify mb-5">
-            Our financial management services are designed to support the
-            long-term success of the properties we manage. By maintaining high
-            standards of accuracy and transparency, we ensure that our clients
-            have the financial information they need to achieve their goals.
-          </p>
           <h2 className="text-2xl font-semibold text-dark mb-4">
             Benefits of Our Financial Management Services
           </h2>
           <ul className="list-disc list-inside text-gray-700 text-justify mb-5">
             <li>
-              <strong>Improved Profitability:</strong> Through effective
-              budgeting and financial oversight, we help our clients maximize
-              their profitability.
+              <strong>Improved Profitability:</strong> Effective budgeting and
+              financial oversight.
             </li>
             <li>
-              <strong>Enhanced Financial Health:</strong> Our comprehensive
-              financial management practices ensure the long-term financial
-              health of the properties we manage.
+              <strong>Enhanced Financial Health:</strong> Long-term financial
+              stability.
             </li>
             <li>
-              <strong>Informed Decision-Making:</strong> With accurate and
-              timely financial data, our clients can make informed decisions
-              that drive their success.
-            </li>
-            <li>
-              <strong>Regulatory Compliance:</strong> We ensure that our clients
-              remain in compliance with all relevant regulations, reducing the
-              risk of legal issues.
-            </li>
-            <li>
-              <strong>Transparency and Accountability:</strong> Our commitment
-              to transparency and accountability ensures that our clients have
-              complete confidence in our financial management services.
+              <strong>Informed Decision-Making:</strong> Accurate and timely
+              financial data.
             </li>
           </ul>
           <p className="text-gray-700 text-justify mb-5">
-            At New London Hospitality, we understand that sound financial
-            management is crucial to the success of any hospitality business.
-            Our dedicated team of financial experts is committed to providing
-            the highest level of service, ensuring that our clients achieve
-            their financial goals and secure their long-term success.
+            At New London Hospitality, our financial experts are committed to
+            providing the highest level of service, ensuring our clients achieve
+            their financial goals and secure long-term success.
           </p>
         </div>
       </div>

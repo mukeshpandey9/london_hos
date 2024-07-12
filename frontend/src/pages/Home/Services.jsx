@@ -40,12 +40,6 @@ const Services = () => {
       description:
         "Our team focuses on maintaining excellent customer relations, ensuring high levels of client satisfaction.",
     },
-    {
-      icon: <Zap className="h-8 w-8 text-gray-600 " />,
-      title: "Human Resources",
-      description:
-        "We handle all aspects of HR management, including recruitment, training, and employee development.",
-    },
   ];
 
   return (

@@ -37,29 +37,29 @@ export default function AboutPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-12">
           <div className="flex flex-col justify-center items-center">
             <span className="md:text-4xl text-3xl text-gray-600 font-bold">
-              <CountUp end={3.5} />+
+              <CountUp end={8} />+
             </span>
             <span className="text-gray-900 font-semibold">
               years of experience
             </span>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          {/* <div className="flex flex-col justify-center items-center">
             <span className="md:text-4xl text-3xl text-gray-600 font-bold">
-              <CountUp end={23} />+
+              <CountUp end={15} />+
             </span>
-            <span className="text-gray-900 font-semibold">projects</span>
-          </div>
-          <div className="flex flex-col justify-center items-center">
+            <span className="text-gray-900 font-semibold">hotels</span>
+          </div> */}
+          {/* <div className="flex flex-col justify-center items-center">
             <span className="md:text-4xl text-3xl text-gray-600 font-bold">
               <CountUp end={830} />+
             </span>
             <span className="text-gray-900 font-semibold">
               positive responses
             </span>
-          </div>
+          </div> */}
           <div className="flex flex-col justify-center items-center">
             <span className="md:text-4xl text-3xl text-gray-600 font-bold">
-              <CountUp end={100000} />+
+              <CountUp end={15} />+
             </span>
             <span className="text-gray-900 font-semibold">trusted hotels</span>
           </div>
@@ -125,18 +125,7 @@ export default function AboutPage() {
               guest satisfaction.
             </p>
           </div>
-          <div className="p-4 border rounded-lg bg-white shadow-sm">
-            <h2 className="text-2xl font-semibold text-dark mb-4">
-              Human Resources
-            </h2>
-            <p className="text-gray-700 text-justify">
-              Our commitment to excellence extends to our people. We invest in
-              recruiting top talent, provide comprehensive training programs,
-              and foster a culture of continuous learning and development. By
-              empowering our teams, we ensure they deliver the highest standards
-              of service and professionalism.
-            </p>
-          </div>
+
           <div className="p-4 border rounded-lg bg-white shadow-sm">
             <h2 className="text-2xl font-semibold text-dark mb-4">
               Quality Assurance
