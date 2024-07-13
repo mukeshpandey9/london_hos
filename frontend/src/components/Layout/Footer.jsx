@@ -101,7 +101,7 @@ const Footer = () => {
                   href: "#",
                   icon: (
                     <svg
-                      className="w-4 h-4"
+                      className="w-6 h-6"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -120,7 +120,7 @@ const Footer = () => {
                   href: "#",
                   icon: (
                     <svg
-                      className="w-4 h-4"
+                      className="w-6 h-6"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -135,7 +135,7 @@ const Footer = () => {
                   href: "#",
                   icon: (
                     <svg
-                      className="w-4 h-4"
+                      className="w-6 h-6"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -154,7 +154,7 @@ const Footer = () => {
                   href: "#",
                   icon: (
                     <svg
-                      className="w-4 h-4"
+                      className="w-6 h-6"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -173,7 +173,7 @@ const Footer = () => {
                   href: "#",
                   icon: (
                     <svg
-                      className="w-4 h-4"
+                      className="w-6 h-6"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
@@ -191,7 +191,7 @@ const Footer = () => {
               ].map((social, socialIdx) => (
                 <a
                   href={social.href}
-                  className="text-gray-100 hover:text-gray-900"
+                  className="text-gray-100  hover:text-gray-900"
                   key={socialIdx}
                 >
                   {social.icon}
