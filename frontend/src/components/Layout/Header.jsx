@@ -28,7 +28,7 @@ export const Header = () => {
             className="flex gap-1 items-center text-sm md:text-sm"
           >
             <CiMobile1 />
-            +00 (123) 456 7890
+            +1 (856) 981-8544
           </a>
           <a
             href="mailto:Info@newlondonhospitality.com"
